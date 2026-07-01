@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AdMob Mediation Assistant — demo</title>
+<style>
+  @font-face { font-family:"Roboto"; font-weight:100 900; font-display:swap; src:url("roboto-latin.woff2") format("woff2"); }
+  :root{ --font:"Google Sans Text","Google Sans","Roboto",system-ui,-apple-system,sans-serif; }
+  html,body{margin:0;height:100%;background:#dfe1e5;font-family:var(--font);overflow:hidden;}
+  .stage{display:flex;height:100vh;}
+  #admob{flex:1;border:none;background:#fff;height:100%;}
+  /* Chrome side-panel dock: Chrome renders this chrome (title + icon), not the extension. */
+  .dock{width:400px;flex:none;display:flex;flex-direction:column;background:#fff;
+        box-shadow:-3px 0 16px rgba(60,64,67,.16);}
+  .dock-head{height:44px;flex:none;display:flex;align-items:center;gap:10px;padding:0 14px;
+             border-bottom:1px solid #e8eaed;color:#3c4043;}
+  .dock-head img{width:18px;height:18px;border-radius:4px;}
+  .dock-head .t{font:500 13px/1 var(--font);}
+  .dock-head .x{margin-left:auto;color:#5f6368;font-size:18px;}
+  #panel{flex:1;border:none;width:100%;}
+  /* Caption (lower third) */
+  .caption{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(8px);
+           max-width:900px;background:rgba(32,33,36,.94);color:#fff;padding:14px 26px;border-radius:12px;
+           font:500 19px/1.45 var(--font);text-align:center;opacity:0;transition:opacity .3s,transform .3s;
+           box-shadow:0 6px 24px rgba(0,0,0,.28);pointer-events:none;z-index:100;letter-spacing:-.005em;}
+  .caption.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  .cursor{position:fixed;width:22px;height:22px;margin:-11px 0 0 -11px;z-index:120;pointer-events:none;
+          opacity:0;transition:opacity .2s;}
+  .cursor.show{opacity:1;}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <iframe id="admob" src="admob-page.html"></iframe>
+    <div class="dock">
+      <div class="dock-head">
+        <img id="ext-icon" alt="" />
+        <span class="t">AdMob Mediation Assistant</span>
+        <span class="x">&times;</span>
+      </div>
+      <iframe id="panel" src="/sidepanel/index.html"></iframe>
+    </div>
+  </div>
+  <div class="caption" id="caption"></div>
+  <img class="cursor" id="cursor" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath d='M3 2l6 15 2.2-6.2L17.5 8.8z' fill='%23202124' stroke='white' stroke-width='1.3'/%3E%3C/svg%3E" />
+  <script>
+    // Chrome's side-panel header shows the real extension icon.
+    document.getElementById("ext-icon").src = "/icons/icon-48.png";
+  </script>
+</body>
+</html>

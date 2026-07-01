@@ -1,0 +1,19 @@
+# secrets / env
+.env
+.env.*
+!.env.example
+*.key
+# python
+__pycache__/
+*.py[cod]
+.venv/
+# node / build
+node_modules/
+dist/
+*.tsbuildinfo
+# demo build artifacts
+demo/harness.js
+demo/out/
+*.webm
+# os
+.DS_Store

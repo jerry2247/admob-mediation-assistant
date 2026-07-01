@@ -1,0 +1,19 @@
+{
+  "name": "admob-agent-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome MV3 side-panel extension for the AdMob Mediation Assistant",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node tests/dom.spec.mjs && node tests/real-dom.spec.mjs",
+    "package": "node build.mjs && cd dist && zip -r -q ../admob-assistant.zip . && echo 'packaged dist -> admob-assistant.zip'"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "esbuild": "^0.24.0",
+    "playwright": "^1.61.0",
+    "typescript": "^5.6.0"
+  }
+}

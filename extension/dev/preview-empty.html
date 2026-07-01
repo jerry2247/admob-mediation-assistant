@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview — empty state</title>
+    <link rel="stylesheet" href="../src/sidepanel/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main class="transcript">
+        <div class="empty">
+          <p class="lead">How can I help with mediation?</p>
+          <p class="sub">Ask a question, or start with one of these.</p>
+          <div class="suggestions">
+            <button class="suggestion">Create a mediation group</button>
+            <button class="suggestion">Bidding vs. waterfall</button>
+            <button class="suggestion">How do I increase eCPM?</button>
+          </div>
+        </div>
+      </main>
+      <form class="composer">
+        <textarea id="input" rows="1" placeholder="Ask anything about mediation…"></textarea>
+        <button class="send" aria-label="Send"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 11l18-8-8 18-2-7-8-3z" fill="currentColor"/></svg></button>
+      </form>
+    </div>
+  </body>
+</html>

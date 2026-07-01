@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview — conversation</title>
+    <link rel="stylesheet" href="../src/sidepanel/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main class="transcript">
+        <div class="msg user"><div class="bubble">please help me create a group</div></div>
+        <div class="msg assistant"><div class="bubble">
+          <p>Pick your <strong>Ad format</strong> and <strong>Platform</strong>, then <strong>Continue</strong>. What format is this group for?</p>
+        </div></div>
+        <div class="msg user"><div class="bubble">Interstitial, Android</div></div>
+        <div class="msg assistant"><div class="bubble">
+          <p>Name it something you’ll recognize later — for example <strong>Android Interstitial — US</strong>. What should it be called?</p>
+        </div></div>
+        <div class="msg user"><div class="bubble">what's the difference between bidding and waterfall?</div></div>
+        <div class="msg assistant"><div class="bubble">
+          <p>Bidding runs a real-time auction across your sources for each request — the highest bid wins. Waterfall calls sources in a fixed order by the eCPM you set, top to bottom.</p>
+          <p>Bidding usually maximizes competition; waterfall gives you manual control. Most groups today lead with bidding and add a few waterfall sources.</p>
+        </div></div>
+      </main>
+
+      <section class="card draft-card">
+        <div class="card-head">Group draft</div>
+        <div class="card-body"><div class="draft-grid">
+          <div class="k">Format</div><div class="v">Interstitial</div>
+          <div class="k">Platform</div><div class="v">Android</div>
+          <div class="k">Name</div><div class="v missing">—</div>
+        </div></div>
+      </section>
+
+      <form class="composer">
+        <textarea id="input" rows="1" placeholder="Ask anything about mediation…"></textarea>
+        <button class="send" aria-label="Send"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 11l18-8-8 18-2-7-8-3z" fill="currentColor"/></svg></button>
+      </form>
+    </div>
+  </body>
+</html>

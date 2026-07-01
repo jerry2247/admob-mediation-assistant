@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdMob Mediation Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="banner" class="banner hidden" role="status"></div>
+      <div id="sr-status" class="sr-only" role="status" aria-live="polite"></div>
+
+      <main id="transcript" class="transcript" aria-label="Conversation"></main>
+
+      <form id="composer" class="composer">
+        <textarea id="input" rows="1" placeholder="Ask anything about mediation…" autocomplete="off"></textarea>
+        <button id="send" type="submit" class="send" aria-label="Send message" disabled>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 11l18-8-8 18-2-7-8-3z" fill="currentColor"/></svg>
+        </button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
