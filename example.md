@@ -1,92 +1,31 @@
-# Veo 3 — generating the FULL music video (~3 min, no loops)
+# Veo 3 — full music-video background prompts
 
-Temporary scratch file — delete anytime.
+## 1 — Rainy Kyoto canal (romantic)
+Slow smooth side-tracking shot, cinematic. A young couple walks at a calm, steady pace beneath one clear umbrella along a stone path beside a narrow Kyoto canal at dusk. Gentle rain falls the whole time, raindrops rippling across the canal, warm paper lanterns and wooden machiya townhouses drifting past, their reflections shimmering across the wet stone and water, willow branches swaying, thin mist sliding over the surface. As the video progresses, dusk slowly deepens into blue night and the lanterns glow warmer and brighter, the rain softening near the end. Warm lantern gold against cool blue twilight, soft romantic cinematic color grade. No on-screen text, no watermarks.
 
-Two ways to get a full-length video out of Veo. Both are fine; A is simplest, B looks the most
-like a real music video.
+## 2 — Rooftop neon club (dance / k-pop)
+Slow constant orbiting shot, cinematic. A glossy rooftop nightclub stage at night above a glittering city skyline. Magenta and cyan laser beams sweep continuously through drifting haze, LED wall panels strobe and pulse like a 128 BPM club track, a mirror ball spins and scatters traveling specks of light, neon reflections ripple across the wet dance floor. As the video progresses, the light show keeps evolving — new laser patterns, color waves rolling across the LED rigs, bursts of strobe at peak moments, calmer glowing passages between them. High-energy saturated neon, deep contrast, hyper-glossy. No on-screen text, no watermarks.
 
----
+## 3 — Beach at golden dusk (love song)
+Slow side-tracking shot along the waterline, cinematic. A couple walks barefoot at the edge of the surf at golden dusk, holding hands, waves rolling in and washing over the sand around their feet. Warm light shimmers in a path across the ocean, palms sway gently, seabirds glide far in the distance, her dress and their hair stir in the breeze. As the video progresses, the sun sinks lower and the sky slowly turns from gold to rose to violet, the first stars appearing near the end. Warm amber and soft pink tones fading into dusk, romantic and calm. No on-screen text, no watermarks.
 
-## Approach A — one continuous scene (Flow "Extend")
+## 4 — Cozy rainy study room (lofi)
+Fixed camera, cozy anime-style interior, cinematic. A warm desk lamp glows beside a steaming mug on a wooden desk, steam curling upward, rain streaking down the window behind it with a blurred glowing city beyond. A cat dozes on the windowsill, its tail flicking now and then, notebook pages lift slightly, dust motes drift in the lamplight, the rain intensity ebbs and flows against the glass. As the video progresses, the city lights outside slowly shift and a distant train passes, the lamp flickering warmly once or twice. Warm amber interior against cool blue rainy night. No on-screen text, no watermarks.
 
-Generate the first 8s clip, then hit **Extend** repeatedly (each extend continues from the last
-frame, ~7-8s) until you pass the song length (~2:40 for Kyoto Rain → ~22 extends). Export as one
-file, drop it in chat, and I mux the track under it. No looping anywhere.
+## 5 — Storm mountain vista (epic orchestral)
+Slow constant forward aerial glide, epic cinematic concept art. A vast mountain valley under churning storm clouds, tattered war banners on stone ruins snapping in the wind, embers and ash streaming across the frame, fog rolling through the valley floor, lightning flickering deep inside the clouds. As the video progresses, the glide pushes deeper into the valley, the storm builds in intensity, and golden light gradually breaks through the clouds on the horizon until it floods the peaks near the end. Cold steel blue against burning gold, dramatic scale. No on-screen text, no watermarks.
 
-- Use ONE consistent prompt for the first clip; for each extend, keep the wording almost identical
-  and only nudge what changes ("they keep walking, rain continues, lanterns pass by").
-- Watch for drift: after many extends the color/details can slowly degrade or morph. If it starts
-  looking off around the 1-minute mark, switch to Approach B instead.
-- Motion CAN progress now — walking, passing scenery, evolving sky are all fine.
+## 6 — Neon night drive (synthwave / phonk)
+Low constant forward-tracking shot over the centerline of a rain-slicked city street at night, cinematic. Neon signs and traffic lights stream past, reflected as long shimmering streaks on the wet asphalt, steady rain falling, steam rising from grates, distant taillights glowing through the haze. As the video progresses, the drive moves through changing districts — dense neon canyons, an elevated stretch with the skyline glittering beyond, a tunnel of pulsing lights — the speed always constant and hypnotic. Deep purples, magenta and cyan, moody and cinematic. No on-screen text, no watermarks.
 
-**Kyoto Rain — starting clip prompt:**
-Slow smooth side-tracking shot, cinematic. A young couple walks at a calm, steady pace beneath one
-clear umbrella along a stone path beside a narrow Kyoto canal at dusk, gentle rain falling,
-raindrops rippling across the canal, warm paper lanterns and machiya wooden townhouses drifting past,
-their reflections shimmering in the wet stone and water, willow branches swaying, thin mist. Warm
-lantern glow against cool blue dusk, soft cinematic color, romantic and serene. No text, no cuts.
+## 7 — Deep space nebula (ambient)
+Extremely slow constant forward drift, cinematic. A vast luminous nebula in deep space, wisps of violet and teal gas curling in slow motion, stars twinkling at different rates, stardust particles drifting past the camera. As the video progresses, the drift carries gently through the outer veils of the nebula toward a bright stellar nursery at its heart, passing glowing pillars of gas, a slow aurora-like shimmer rolling through the clouds. Deep blacks, luminous color, weightless and serene. No on-screen text, no watermarks.
 
-**Extend prompt (reuse every time, tweak lightly):**
-They keep walking at the same calm pace, rain continuing, more lanterns and wooden townhouses
-drifting past, reflections shimmering, same warm dusk light and gentle mood. No text, no cuts.
+## 8 — Autumn forest path (nostalgic)
+Very slow forward-tracking shot, cinematic. A quiet forest path blanketed in amber leaves, golden leaves falling steadily and drifting on the breeze, branches swaying, low sun rays flickering through the moving canopy, thin mist sliding between the trunks. As the video progresses, the path winds gently past an old wooden bench and a small stone bridge over a stream, the light slowly warming toward late-afternoon gold. Warm amber and rust tones with soft haze, wistful and calm. No on-screen text, no watermarks.
 
----
+## 9 — Rainy Tokyo alley (dark / intense)
+Slow constant forward push, cinematic. A narrow Tokyo alley at night in heavy rain, neon signs buzzing and flickering overhead, rain hammering puddles that ripple with neon reflections, steam pouring from vents, paper lanterns swinging, cables swaying overhead. As the video progresses, the push moves deeper down the alley past glowing izakaya doorways and stacked signage, the rain surging and easing in waves, a distant thunder flash lighting the clouds once or twice. High contrast, saturated neon against deep shadow, moody and cinematic. No on-screen text, no watermarks.
 
-## Approach B — a real shot sequence (recommended for quality)
-
-This is how actual music videos work: many short shots of the SAME world, cut together to the
-song's structure. Generate 12-16 separate 8s clips (all plain text-to-video — no extends, so zero
-drift), number them, and drop them all in chat. I assemble them in order, cut/crossfade between
-shots, roughly aligned to the song's sections, and mux the track.
-
-**Keep every prompt ending with this same style block so all shots match:**
-> Rainy Kyoto canal at dusk, warm paper-lantern glow against cool blue twilight, gentle steady
-> rain, soft cinematic color grade, romantic and serene. No text.
-
-**Kyoto Rain shot list (2:40 song — intro/verse/chorus structure):**
-1. *(Intro)* Fixed wide establishing shot of the canal, empty path, rain rippling the water, mist
-   drifting, lanterns glowing. + style block
-2. *(Intro)* Slow close-up: raindrops striking the canal surface, lantern light shimmering in the
-   ripples. + style block
-3. *(Verse 1)* Side-tracking shot: the couple walking under one clear umbrella, calm steady pace,
-   townhouses drifting past. + style block
-4. *(Verse 1)* Close shot from behind: their shoulders and the umbrella, rain sliding off its edge,
-   canal beside them. + style block
-5. *(Pre-chorus)* Low shot over the wet stone path, their feet walking side by side through
-   shallow reflections. + style block
-6. *(Chorus)* Wide slow push-in: the couple on a small wooden bridge, canal stretching away lined
-   with glowing lanterns, rain streaking through the light. + style block
-7. *(Chorus)* Slow upward tilt from the canal reflections to the couple laughing under the
-   umbrella. + style block
-8. *(Verse 2)* Through a teahouse window with steam on the glass: the couple passing outside,
-   warm interior light in the foreground. + style block
-9. *(Verse 2)* Close-up: her hand reaching from under the umbrella to catch raindrops. + style block
-10. *(Pre-chorus)* Tracking shot low along the canal surface, ripples and lantern reflections
-    streaming by. + style block
-11. *(Chorus)* Wide: the couple slow-dancing a few steps under the umbrella beside the canal,
-    rain glittering around them. + style block
-12. *(Bridge — quiet)* Fixed still-like shot: the umbrella resting against a stone wall, rain
-    softening, mist drifting over the water. + style block
-13. *(Final chorus)* The widest most beautiful shot: full canal vista, lanterns doubled in the
-    water, the couple small in frame walking into the glow. + style block
-14. *(Outro)* Slow fade-friendly shot: rain easing on the empty path, lantern light flickering
-    gently. + style block
-
-Generate in any order; name the files `01.mp4` … `14.mp4` if you can. Missing a few is fine —
-I'll reuse/hold shots to fill the runtime.
-
----
-
-### Other themes — Approach A starting prompts (extend the same way)
-
-**Neon club (dance):** Slow constant orbit around a packed rooftop nightclub stage at night, laser
-beams sweeping, LED walls strobing to a 128 BPM beat, mirror ball scattering light, haze glowing,
-skyline behind. High-energy saturated neon. No text, no cuts.
-
-**Beach at dusk (love song):** Slow side-tracking shot along the waterline at golden dusk, waves
-rolling and washing over the sand, warm light shimmering across the water, palms swaying, the sky
-slowly deepening from gold to rose. Romantic and calm. No text, no cuts.
-
-**Epic vista (orchestral):** Slow constant aerial glide over a vast stormy mountain valley, fog
-rolling below, banners on ruins snapping in wind, embers streaming, lightning flickering inside
-clouds, golden light breaking on the horizon. Epic cinematic scale. No text, no cuts.
+## 10 — Winter cabin fireplace (warm acoustic)
+Fixed camera, cinematic. A rustic cabin interior at night: flames dance in a stone fireplace, embers drifting up, warm firelight flickering across wooden walls, a candle swaying on the table, steam rising from a kettle, snow falling softly outside a frosted window. As the video progresses, the fire slowly burns from tall bright flames down to deep glowing embers, the candle shortens, and the snowfall outside thickens then calms. Deep warm oranges against cool blue window light, intimate and comforting. No on-screen text, no watermarks.
